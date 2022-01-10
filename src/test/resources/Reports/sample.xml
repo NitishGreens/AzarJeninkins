@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="23.568626">
+<testcase classname="Verify facebook application" name="Validate facebook login with invalid credentials" time="19.214329">
+<system-out><![CDATA[Given User is on facebook login page........................................passed
+When User enter "abu@gmail.com" and "abu@123"...............................passed
+And User click on login Button..............................................passed
+Then User get error message.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify facebook application" name="Validate facebook singup page with invalid credentials" time="4.354297">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.stepdef.StepDefinition.user_Click_on_signup_Button(StepDefinition.java:55)&#13;&#10;&#9;at ✽.User Click on signup Button(src/test/resources/Features/Facebook.feature:20)&#13;&#10;"><![CDATA[Given User is on facebook login page........................................passed
+When User click on createNew Button.........................................passed
+And User enters "Nitish" and "Selvakumar"...................................passed
+Then User Click on signup Button............................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.stepdef.StepDefinition.user_Click_on_signup_Button(StepDefinition.java:55)
+	at ✽.User Click on signup Button(src/test/resources/Features/Facebook.feature:20)
+]]></failure>
+</testcase>
+</testsuite>
